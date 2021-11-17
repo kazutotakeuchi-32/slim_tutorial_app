@@ -24,8 +24,10 @@ return function (App $app) {
         $group->get('/{id}', ViewUserAction::class);
     });
 
+
     $app->get('/test',function (Request $request, Response $response){
         $response->getBody()->write('test');
         return $response;
     });
+    
 };
